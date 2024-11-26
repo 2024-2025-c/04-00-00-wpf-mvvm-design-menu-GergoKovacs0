@@ -6,12 +6,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Resources/ViewModelViewDataTamplate.xaml"/>
-                <ResourceDictionary Source="/Styles/UIColors.xaml" />
-                <ResourceDictionary Source="/Styles/MenuButtons.xaml" />
-                <ResourceDictionary Source="/Styles/ControlBarButton.xaml" />
-                <ResourceDictionary Source="/Styles/IconButton.xaml"/>
-                <ResourceDictionary Source="/Styles/SubMenuButtonStyle.xaml"/>
+                <ResourceDictionary Source="/Resources/ViewModelViewDataTemplate.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
