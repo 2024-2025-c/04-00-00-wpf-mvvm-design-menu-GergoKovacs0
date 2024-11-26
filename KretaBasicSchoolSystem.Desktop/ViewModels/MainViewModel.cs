@@ -31,7 +31,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             _schoolCitizensViewModel = schoolCitizensViewModel;
             _schoolClassesViewModel = schoolClassesViewModel;
 
-            CurrentChildView = _controlPanelViewModel;
+            _currentChildView = _controlPanelViewModel;
             ShowDashbord();
         }
 

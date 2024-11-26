@@ -24,16 +24,9 @@ namespace KretaBasicSchoolSystem.Desktop
                 .ConfigureServices(services =>
                 {
                     services.ConfigureViewViewModels();
-
-                    // Students
-                    // School Citizens
-                    services.AddSingleton<StudentViewModel>();
-                    services.AddSingleton<StudentView>(s => new StudentView()
-                    {
-                        DataContext = s.GetRequiredService<StudentViewModel>()
-                    });
                 })
                 .Build();
+
         }
 
         protected async override void OnStartup(StartupEventArgs e)
