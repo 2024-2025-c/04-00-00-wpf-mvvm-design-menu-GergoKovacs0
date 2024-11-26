@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Windows;
+using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens;
+using KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens;
 
 namespace KretaBasicSchoolSystem.Desktop
 {
@@ -22,9 +24,16 @@ namespace KretaBasicSchoolSystem.Desktop
                 .ConfigureServices(services =>
                 {
                     services.ConfigureViewViewModels();
+
+                    // Students
+                    // School Citizens
+                    services.AddSingleton<StudentViewModel>();
+                    services.AddSingleton<StudentView>(s => new StudentView()
+                    {
+                        DataContext = s.GetRequiredService<StudentViewModel>()
+                    });
                 })
                 .Build();
-
         }
 
         protected async override void OnStartup(StartupEventArgs e)
