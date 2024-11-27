@@ -5,8 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Windows;
-using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens;
-using KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens;
 
 namespace KretaBasicSchoolSystem.Desktop
 {
